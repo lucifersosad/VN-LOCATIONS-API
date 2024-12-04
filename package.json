@@ -1,0 +1,19 @@
+{
+  "name": "vn-locations-api",
+  "version": "1.0.0",
+  "description": "API to query cities, districts, wards from  Vietnam",
+  "main": "server.js",
+  "author": "KCoder <khoa@sgdigi.co>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "fastify-cli": "^2.13.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.18.0"
+  }
+}
