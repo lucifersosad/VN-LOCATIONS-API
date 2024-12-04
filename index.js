@@ -3,6 +3,9 @@ const { pad0 } = require('./utils');
 
 require('dotenv').config();
 
+// Đăng ký plugin CORS với cấu hình mặc định
+fastify.register(require('@fastify/cors'));
+
 const tinhThanh = require('./data/tinh_tp.json');
 const quanHuyen = require('./data/quan_huyen.json');
 
