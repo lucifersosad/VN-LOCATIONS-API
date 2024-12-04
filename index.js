@@ -59,10 +59,10 @@ fastify.get('/district/:code', async (request, reply) => {
 
 const start = async () => {
   try {
-    await fastify.listen(
-      process.env.PORT || 3000,
-      process.env.HOST || '127.0.0.1'
-    );
+    await fastify.listen({
+      port: parseInt(process.env.PORT, 10) || 3000,
+      host: process.env.HOST || '127.0.0.1'
+    });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
